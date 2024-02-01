@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+h1 {
+  text-align: center;
+}
+</style>
+
+<title>CBDO-2022</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+</head>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-gray w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-32"><b>CBDO 2022<br>Colóquio Brasileiro de Dinâmica Orbital</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="index_english.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">English Site</a>
+    <!--<a href="virtual_poster.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Pôsteres Virtuais</a> -->	
+    <a href="#poster" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Pôsteres Virtuais</a>
+    <a href="#curso" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Mini Curso</a>
+    <br>
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Início</a> 
+    <a href="#datas" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Notícias e Datas Importantes</a> 
+    <a href="#palestra" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Palestrantes Convidados</a> 
+    <a href="#programa" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Programa Final</a> 
+    <a href="#livro" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Livro de Resumos</a>
+    <a href="#instru" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Instruções para Pôsteres e Slides</a>									       
+    <a href="#registro" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Inscrição</a> 
+<!--    <a href="#templates" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Templates</a> 
+	<a href="#sub" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Trabalhos Aceitos</a> -->
+    <a href="#area" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Local do Evento</a>
+    <a href="#hosp" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Hospedagem / Transporte</a>
+    <a href="#alimen" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Alimentação</a>  
+    <a href="#outras" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Informações Importantes</a>  
+    <a href="#historico" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Colóquios Anteriores</a>
+    <a href="#contato" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contato</a>
+    <a href="#comissao" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Comissão Organizadora</a>
+  </div>
+  <div class="w3-container">
+    <h3>&nbsp;</h3>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-gray w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-gray w3-margin-right" onclick="w3_open()">☰</a>
+  <span>CBDO 2022</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="centered" style="margin-top:80px" id="showcase">
+    <h1 class="centered"><b>CBDO 2022 <br> 
+      XXI Colóquio Brasileiro de Dinâmica Orbital <br>
+      12 a 16 de dezembro de 2022 <br>
+      Instituto Nacional de Pesquisas Espaciais, INPE <br>
+      São José dos Campos, SP</b>
+    </h1>
+  </div>
+  
+  <!-- datas -->
+  <div class="w3-container" id="datas" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-gray"><b>Notícias e Datas Importantes</b></h1>
+    <hr style="width:50px;border:5px solid gray" class="w3-round">
+    <p>
+    <ul>
+      <li>Programa final e livro de resumos disponíveis em 29/11/2022. </li>
+      <li>Consulte as instruções para apresentações orais e confecção de pôsteres. </li>
+      <li>Lista de resumos aceitos disponível para consulta em 12/10/2022. </li>
+      <li>O CBDO 2022 será majoritariamente presencial, sendo que algumas apresentações, tanto orais quanto pôsteres, poderão ser 
+        no formato virtual desde que devidamente justificadas. </li>
+      <li>Submissão de resumos até 30/09/2022.<br>
+        Pedimos àqueles que enviaram um resumo anteriormente, que o encaminhem novamente em sua versão 
+        final até esta data. Utilize o template disponível <a href="#templates">aqui</a>. 
+        Prepare um arquivo pdf e o envie para <a href="mailto:xxicbdo2022@gmail.com?subject=Resumo CBDO">xxicbdo2022@gmail.com</a> </li>
+      <li>Emissão das cartas de aceite dos resumos até 15/10/2022. </li>
+      <li>Inscrições e pagamento de taxas a partir de 01/10/2022. </li>
+    </ul>
+    Em caso de dúvidas, <a href="#contato">contate-nos</a>.
+    </p>
+  </div>
+  
+    <!-- palestrantes convidados -->
+  <div class="w3-container" id="palestra" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-gray"><b>Palestrantes Convidados</b></h1>
+    <hr style="width:50px;border:5px solid gray" class="w3-round">
+    <ul>
+    <li>Alain Albouy - IMCCE, Observatoire de Paris, França.</li>
+    <li>Ariadna Farrés - University of Maryland at College Park, Estados Unidos.</li>
+    <li>Bertram Bitsch - Max-Planck-Institute for Astronomy, Alemanha.</li>
+    <li>Harold F. Levison - Southwest Research Institute, Estados Unidos.</li>
+    <li>Kat Volk - The University of Arizona and Planetary Science Institute, Estados Unidos.</li>
+    <li>Seth A. Jacobson - Michigan State University, Estados Unidos.</li>
+    <li>Zoran Kne&#382;evi&#263; - Serbian Academy of Sciences and Arts, Serbia.</li>
+    </ul>
+  </div>
+	
+	
+  
+    <!-- programa -->
+  <div class="w3-container" id="programa" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-gray"><b>Programa Final</b></h1>
+    <hr style="width:50px;border:5px solid gray" class="w3-round">
+    <iframe src="CBDO_2022_Horario.pdf" width="100%" height="800" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+    <p> 
+      Baixe <a href="https://drive.google.com/file/d/1tPI1gkrFLuZQxPKCoACk6iN_BvK3SQBA/view?usp=share_link">aqui</a>.
+    </p>
+    <p> 
+      <i>Atenção: caso haja jogo do Brasil na quarta-feira 14/12, os horários da tarde desse dia serão deslocados para a terça-feira 13/12.</i>
+    </p>    
+  </div>
+	
+      <!-- programa -->
+  <div class="w3-container" id="poster" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-gray"><b>Pôsteres Virtuais</b></h1>
+    <hr style="width:50px;border:5px solid gray" class="w3-round">
+    <p> 
+      Veja aqui os Pôsteres Virtuais <a href="https://drive.google.com/drive/folders/1krpjtgiKoHxdKAJwSSkURn1cj2JiDjSm?usp=share_link">aqui</a>.
+    </p>
+  </div>
+
+	      <!-- programa -->
+  <div class="w3-container" id="curso" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-gray"><b>Mini Curso</b></h1>
+    <hr style="width:50px;border:5px solid gray" class="w3-round">
+    <p> 
+      Veja aqui o material do mini curso <a href="https://drive.google.com/drive/folders/14OBjX4nzFCeLWGxObgB2jI0YrE_Mobq_?usp=sharing">aqui</a>.
+    </p>
+  </div>
+
+    <!-- livro de resumos -->
+  <div class="w3-container" id="livro" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-gray"><b>Livro de Resumos</b></h1>
+    <hr style="width:50px;border:5px solid gray" class="w3-round">
+    <p>
+      <font size="5">
+	O livro de resumos contendo o programa final e os resumos apresentados pode ser descarregado <a href="https://drive.google.com/file/d/1aH24JLXXtpTfatPPjam5jf9iNr-aoxjU/view?usp=share_link">aqui</a>.
+      </font>
+    </p>
+    <p>
+       <i>Atenção: uma cópia impressa das 20 primeiras páginas do livro será fornecida durante o evento.</i>
+    </p>
+  </div>							 
+
+    <!-- instruções -->
+  <div class="w3-container" id="instru" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-gray"><b>Instruções para Pôsteres e Slides</b></h1>
+    <hr style="width:50px;border:5px solid gray" class="w3-round">
+    <p>																														 
+      <b>Instruções para apresentações orais</b>
+      <ul>
+	 <li>As apresentações orais terão duração de <b>15 (quinze) minutos</b>, com mais 5 (cinco) minutos para discussão e perguntas</li>
+         <li>Os slides das apresentações devem ser escritos em idioma <b>inglês</b>. Nosso congresso conta com a presença de pesquisadores de diferentes países, 
+             e a decisão de adotar a escrita em inglês nos slides visa facilitar a forma de comunicação</li>
+         <li>O idioma da apresentação poderá ser português, espanhol ou inglês</li>
+      </ul>
+
+      <b>Instruções para apresentação de pôsteres</b>
+      <ul>
+         <li>Os suportes para pôsteres são do tipo tripé, logo não há como colar o pôster com fitas</li>
+         <li>Os pôsteres deverão ter uma <b>corda ou barbante para pendurar</b> no suporte e tubos ou varetas na borda superior e inferior para dar sustentação</li>
+         <li>O texto dos pôsteres deverá estar em idioma <b>inglês</b></li>
+         <li>As dimensões máximas para os pôsteres são 90 cm (largura) x 120 cm (altura), equivalente ao tamanho A0</li>
+         <li>Os suportes estarão numerados de acordo com o número do pôster que consta no <a href="https://drive.google.com/file/d/1gScE9GGq1Iq_C2hbVxsG3x1DH1WY5bfu/view?usp=share_link">Livro de Resumos</a></li>
+         <li>Os pôsteres serão divididos em 3 Sessões, organizados por grande área conforme a ordem informada no <a href="https://drive.google.com/file/d/1gScE9GGq1Iq_C2hbVxsG3x1DH1WY5bfu/view?usp=share_link">Livro de Resumos</a></li>
+         <li>Os pôsteres <b>não ficarão afixados durante todo o evento</b>, devendo ser pendurados antes da respectiva Sessão e retirados imediatamente após o fim da sessão</li>
+         <li>Os <b>pôsteres virtuais</b> ficarão disponíveis para consulta na página do evento. Durante o transcurso da Sessão 2, os respectivos apresentadores poderão 
+             responder a perguntas utilizando a sala virtual <a href="https://meet.google.com/kzb-acua-kxi">https://meet.google.com/kzb-acua-kxi</a></li>						 
+      </ul>
+    </p>
+  </div> 
+						 
+      <!--inscrição -->
+  <div class="w3-container" id="registro" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-gray"><b>Inscrição</b></h1>
+    <hr style="width:50px;border:5px solid gray" class="w3-round">
+    <p>
+      <b>Início das inscrições e pagamento de taxas a patir de 01/10/2022.</b>
+      <ul>
+        <li>Valores das inscrições, por categorias, <b>até 31/10/2022</b>: </li>
+        <ol>
+          <li>Alunos de Graduação           - R$ 100,00 </li>
+          <li>Alunos de Pós-Graduação       - R$ 200,00 </li>
+          <li>Pós-doutorandos               - R$ 300,00 </li>
+          <li>Professores / Pesquisadores   - R$ 400,00 </li>
+        </ol>
+        <li>Valores das inscrições, por categorias, <b>após 01/11/2022</b>: </li>
+        <ol>
+          <li>Alunos de Graduação           - R$ 125,00 </li>
+          <li>Alunos de Pós-Graduação       - R$ 250,00 </li>
+          <li>Pós-doutorandos               - R$ 400,00 </li>
+          <li>Professores / Pesquisadores   - R$ 500,00 </li>
+        </ol>
+    </ul>
+    Para <b>confirmar a inscrição</b>, deve ser enviado um e-mail para <a href="mailto:xxicbdo2022@gmail.com?subject=Comprovante de pagamento de taxa">xxicbdo2022@gmail.com</a>
+      anexando o comprovante de pagamento da taxa de inscrição (arquivo pdf) e indicando seu nome completo, categoria e instituição. <br>
+    <font color="red"><b>A inscrição não será efetivada caso o comprovante de pagamento não seja enviado para o e-mail acima.</b></font>
+    <ul>
+      <li>Aqueles que precisarem de <b>recibo com CNPJ para PRESTAÇÃO DE CONTAS</b> deverão depositar o valor da inscrição na <br>
+        Conta Corrente: 33856-7, <br>
+        Agência: 3559-9, <br>
+        Banco do Brasil, <br>
+        em favor da SAB, Sociedade Astronômica Brasileira. <br>
+        Para transferências via PIX, a chave é o CNPJ 53.757.191/0001-05. </li>
+      <li>Aqueles que <b>NÃO</b> precisarem de recibo com CNPJ, poderão depositar o valor da inscrição na <br>
+        Conta Poupança: 46092-3 (Variação 51), <br>
+        Agência: 5751-7, <br>
+        Banco do Brasil, <br>
+        em favor de Cristiano F. de Melo. <br>
+        Para transferências via PIX, a chave é o telefone (32) 98403 4592. </li>
+    </ul>
+    Participantes de fora do Brasil poderão efetuar o pagamento no momento do 
+      check-in no evento. Nestes casos, excepcionalmente, será cobrada a taxa anterior a 31/10. <br>
+    <br>
+    Os recibos de pagamento serão entregues no evento, junto com os certificados de participação.
+    </p>
+  </div>
+
+      <!-- templates 
+  <div class="w3-container" id="templates" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-gray"><b>Templates</b></h1>
+    <hr style="width:50px;border:5px solid gray" class="w3-round">
+    <p style="color:red"> <font size="5"> 
+      <a href="https://docs.google.com/document/d/1DlludWNcL59xi5Xk-70hbW-i0JDw5awF/edit?usp=sharing&ouid=113554280010229788651&rtpof=true&sd=true">TEMPLATE DO RESUMO</a>
+      </font>
+    </p>
+  </div>
+    -->
+
+    <!-- trabalhos submetidos
+  <div class="w3-container" id="sub" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-gray"><b>Trabalhos Aceitos</b></h1>
+    <hr style="width:50px;border:5px solid gray" class="w3-round">
+    <p>
+      A lista dos trabalhos submetidos e aceitos pela Comissão Organizadora pode ser consultada <a href="trabalhos.html">aqui</a>.
+    </p>
+  </div>
+    -->
+  
+    <!-- local -->
+  <div class="w3-container" id="area" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-gray"><b>Local do Evento</b></h1>
+    <hr style="width:50px;border:5px solid gray" class="w3-round">
+    <p>
+      O evento ocorrerá no Laboratório de Integração e Testes - LIT, do Instituto Nacional de Pesquisas Espaciais - INPE <br>
+      Endereço: <br>
+      Avenida dos Astronautas 1758, Jardim da Granja <br>
+      São José dos Campos/SP, Brasil 12227010 <br>
+      <a href="https://www.lit.inpe.br/" target="_blank">https://www.lit.inpe.br/</a>
+    </p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117306.8408908908!2d-46.027455426081474!3d-23.248953163223685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cc4b06accadc73%3A0xddb542b96e931e54!2sINPE!5e0!3m2!1spt-BR!2sbr!4v1660161573426!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+  
+   <!-- hospedagem/transport -->
+  <div class="w3-container" id="hosp" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-gray"><b>Hospedagem / Transporte</b></h1>
+    <hr style="width:50px;border:5px solid gray" class="w3-round">
+    <p>
+      <ul>
+	<li>O CBDO 2022 indica o Hotel Faro de São José dos Campos. Para reservas, acesse 
+            <a href="https://www.farohoteis.com.br/" target="_blank">https://www.farohoteis.com.br/</a> ou ligue para (12) 3512-9600. 
+            Na hora da reserva informe que deseja aplicar a tarifa INPE.  
+            Há outros hotéis na cidade com tarifas menores. </li>
+        <li>Há uma linha de ônibus entre o aeroporto de Guarulhos e a Rodoviária de São José dos Campos. Mais informações podem ser encontradas 
+            <a href="https://www.buscaonibus.com.br/horario/aeroporto-de-guarulhos/sao-jose-dos-campos" target="_blank">aqui</a>. </li>
+        <li>Para locomoção através de transporte público basta acessar o <a href="https://moovitapp.com/index/pt-br/transporte_p%C3%BAblico-ADC_INPE-Sao_Jose_dos_Campos-site_29834012-2808" target="_blank">Moovit para São José dos Campos</a>,
+            ou consulte o site da <a href="https://www.sjc.sp.gov.br/servicos/mobilidade-urbana/onibus/" target="_blank">Prefeitura de São José dos Campos</a>. </li>
+      </ul>
+    </p>
+  </div>
+
+    <!-- alimentação -->
+  <div class="w3-container" id="alimen" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-gray"><b>Alimentação</b></h1>
+    <hr style="width:50px;border:5px solid gray" class="w3-round">
+    <p>                                                                                         
+     Há um restarurante próximo ao prédio onde será realizado o CBDO (Lanchonete da ADC), com self-service a R$ 42,90 o quilo.
+     O restaurante permanecerá aberto durante os jogos da Copa com TV para os torcedores.                                                                                        
+     </p>
+  </div>
+
+    <!-- informacoes -->
+  <div class="w3-container" id="outras" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-gray"><b>Informações Importantes</b></h1>
+    <hr style="width:50px;border:5px solid gray" class="w3-round">
+    <p>
+	<ul>
+	<li><b>Vestimenta:</b> o INPE tem algumas restrições quanto a vestimenta. Não é permitido entrar usando calçados abertos, tais como chinelos, etc.
+	Bermudas são aceitas, mas shorts são considerados como muito curtos</li>
+        <li><b>Refeições:</b> haverá um café na parte da manhã e um na parte da tarde, de terça a quinta-feira. Na segunda-feira haverá café apenas à 
+	tarde e na sexta-feira apenas pela manhã</li>
+	<li><b>Jantar de confraternização:</b> na quinta-feira 15/12 haverá um jantar/churrasco na ADC, ao lado do local do evento, aberto a todos os inscritos.
+	Serão vendidos convites para não inscritos no valor de R$ 85,00</li>
+	<li><b>Laptops:</b> é necessário registrar os laptops pessoais na portaria no primeiro dia de ingresso ao INPE</li>
+       </ul>
+     </p>
+  </div>
+								 
+  <!-- historico -->
+  <div class="w3-container" id="historico" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-gray"><b>Colóquios Anteriores</b></h1>
+    <hr style="width:50px;border:5px solid gray" class="w3-round">
+    <p>Os Colóquios Brasileiros de Dinâmica Orbital, CBDO, acontecem a cada dois anos, desde 1982. O primeiro CBDO, realizado no ITA, em julho de 1982, foi organizado por iniciativa do Dr. Wagner Sessin, 
+      e reuniu pesquisadores das áreas de astronomia e dinâmica orbital, interessados nos problemas de Mecânica Celeste Pura e Aplicada.
+      <br><br>
+      O primeiro CBDO teve como título: “Movimentos de Satélites Artificiais: Teoria, Determinação e Aplicações” e dele participaram 51 pesquisadores e pós-graduandos
+      de todo Brasil. Após isso, foram realizadas outras 20 edições do CBDO, 4 delas no Instituto Nacional de Pesquisas Espaciais, como a edição de 2022.
+      Além de um impressionante aumento no número de trabalhos inscritos, também cresceu o número de participantes e o âmbito geográfico do evento, acompanhado 
+      a disseminação de trabalhos ligados à Astronomia e às Atividades Espaciais no nosso país. 
+      <br><br>
+      A participação de pesquisadores do exterior ocorre desde 1984 e a lista de participações pode ser consultada no link 
+      <a href="http://www.astro.iag.usp.br/~dinamica/historic.htm" target="_blank">http://www.astro.iag.usp.br/~dinamica/historic.htm</a>.
+    </p>
+  </div>
+
+  <!-- Contact -->
+  <div class="w3-container" id="contato" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-gray"><b>Contato</b></h1>
+    <hr style="width:50px;border:5px solid gray" class="w3-round">
+    <p> <a href="mailto:xxicbdo2022@gmail.com">xxicbdo2022@gmail.com</a> </p>
+  </div>
+
+  <!-- Comissão -->
+  <div class="w3-container" id="comissao" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-gray"><b>Comissão Organizadora</b></h1>
+    <hr style="width:50px;border:5px solid gray" class="w3-round">
+    <p> 
+    Antônio Fernando Bertachini de Almeida Padro (Presidente), INPE <br>
+    Antônio Delson Conceição de Jesus, UEFS <br>
+    Cláudia Celeste Celestino de Paula Santos, UFABC <br>
+    Cristiano Fiorilo de Melo, UFMG <br>
+    Eduardo Shirlippe Goes Leandro, UFPE <br>
+    Fernando Virgilio Roig, ON <br>
+    Gabriel Caritá, INPE <br>  
+    Marcelo Domingos Marchesin, UFMG <br>
+    Nelson Callegari Junior, UNESP <br>
+    Pryscilla Maria Pires dos Santos, UERJ <br>
+    Rogerio Deienno, SwRI/USA <br>
+    Safwan Aljbaae, 2RP Net Data-driven Company <br>
+    Silvia Maria Giuliatti Winter, UNESP <br>
+    Sylvio Ferraz-Mello, USP <br>  
+    Willer Gomes dos Santos, ITA/DCTA
+    </p>
+  </div>
+   <!-- The Team -->
+
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p></div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
