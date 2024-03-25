@@ -7,7 +7,7 @@ h1 {
 }
 </style>
 
-<title>CBDO-2022</title>
+<title>CBDO-2024</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -15,6 +15,8 @@ h1 {
 <style>
 body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
 body {font-size:16px;}
+body {background-color: rgba(255, 165, 0, 0.11); /* Adjust the alpha value (last parameter) to change the transparency */
+}
 .w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
 .w3-half img:hover{opacity:1}
 </style>
@@ -22,20 +24,21 @@ body {font-size:16px;}
 <body>
 
 <!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-gray w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+<nav class="w3-sidebar w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold; background-color: rgba(255, 165, 0, 0.5)" id="mySidebar"><br>
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
   <div class="w3-container">
-    <h3 class="w3-padding-32"><b>CBDO 2024<br>Colóquio Brasileiro de Dinâmica Orbital</b></h3>
+    <h3 class="w3-padding-32"  style="color: brown;"><b>CBDO 2024<br>Colóquio Brasileiro de Dinâmica Orbital</b></h3>
   </div>
   <div class="w3-bar-block">
-    <a href="index_english.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">English Site</a>
+    <a href="index_english.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-orange">English Site</a>
     <!--<a href="virtual_poster.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Pôsteres Virtuais</a> -->	
    <!--  <a href="#poster" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Pôsteres Virtuais</a> -->
    <!--  <a href="#curso" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Mini Curso</a> -->
     <br>
-    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Início</a> 
-    <a href="#datas" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Notícias e Datas Importantes</a> 
-   <!--  <a href="#palestra" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Palestrantes Convidados</a>  -->
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-orange" >Início</a>
+    <a href="#datas" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-orange">Notícias e Datas Importantes</a>
+    <a href="#palestra" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-orange">Palestrantes Convidados</a>
+    <a href="#resumos" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-orange">Submissão de Resumos</a>
     <!-- <a href="#programa" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Programa Final</a>  -->
      <!--<a href="#livro" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Livro de Resumos</a> -->
      <!--<a href="#instru" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Instruções para Pôsteres e Slides</a> -->
@@ -46,9 +49,9 @@ body {font-size:16px;}
      <!--<a href="#hosp" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Hospedagem / Transporte</a> -->
      <!--<a href="#alimen" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Alimentação</a>   -->
      <!--<a href="#outras" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Informações Importantes</a>  -->
-    <a href="#historico" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Colóquios Anteriores</a>
-    <a href="#contato" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contato</a>
-    <a href="#comissao" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Comissão Organizadora</a>
+    <a href="#historico" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-orange">Colóquios Anteriores</a>
+    <a href="#contato" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-orange">Contato</a>
+    <a href="#comissao" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-orange">Comissão Organizadora</a>
   </div>
   <div class="w3-container">
     <h3>&nbsp;</h3>
@@ -68,28 +71,98 @@ body {font-size:16px;}
 <div class="w3-main" style="margin-left:340px;margin-right:40px">
 
   <!-- Header -->
-  <div class="centered" style="margin-top:80px" id="showcase">
-    <h1 class="centered"><b>CBDO 2024 <br>
-      XXII Colóquio Brasileiro de Dinâmica Orbital <br>
-      dezembro de 2024 <br>
-
+  <div class="centered" style="margin-top:80px;  text-align: center;" id="showcase">
+  <img src="./header.png" alt="header">
+    <h1 class="centered"><b>
     </h1>
   </div>
   
   <!-- datas -->
   <div class="w3-container" id="datas" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-gray"><b>Notícias e Datas Importantes</b></h1>
-    <hr style="width:50px;border:5px solid gray" class="w3-round">
-    XXII Colóquio Brasileiro de Dinâmica Orbital (CBDO 2024)
+    <h1 class="w3-xxxlarge w3-text-brown"><b>Notícias e Datas Importantes</b></h1>
+    <hr style="width:50px;border:5px solid brown" class="w3-round">
+  <br>
+    O CBDO 2024 ocorrerá no Laboratório de Integração e Testes (LIT) do Instituto Nacional de Pesquisas Espaciais (INPE) entre 06 e 10 de dezembro de 2024.
+  <br>
+  <br>
+    Primeira chamada para envio de resumos em 01/04/2024.
+  <br>
+
   </div>
-  
-    <!-- palestrantes convidados
-  <div class="w3-container" id="palestra" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-gray"><b>Palestrantes Convidados</b></h1>
-    <hr style="width:50px;border:5px solid gray" class="w3-round">
-    <ul>
-    </ul>
-  </div>  -->
+
+
+   <!-- palestrantes convidados -->
+    <div class="w3-container" id="palestra" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-brown"><b>Palestrantes Convidados</b></h1>
+    <hr style="width:50px;border:5px solid brown" class="w3-round">
+    <br>
+
+    David Nesvorny
+
+    <br>
+    Southwest Research Institute, Department of Space Studies, Estados Unidos
+    <br>
+
+    <br>
+
+    Felipe Braga Ribas
+
+    <br>
+    Universidade Tecnológica Federal do Paraná, Curitiba (PR), Brasil.
+
+    <br>
+    <br>
+
+    Claudio Vidal Diaz.
+
+    <br>
+    Departamento de Matemática, Universidad del Bío-Bío, Chile.
+
+    <br>
+    <br>
+
+    Hauke Hussmann.
+    <br>
+    German Aerospace Center, Planetary Research Institute, Berlin, Alemanha.
+
+    <br>
+    <br>
+
+    Marcelo Pedro dos Santos.
+    <br>
+    Departamento de Matemática, Universidade Federal Rural de Pernambuco (PE).
+
+    <br>
+    <br>
+
+    Rafael Sfair de Oliveira (Região Sudeste).
+    <br>
+    Universidade Estadual Paulista, Campus Guaratinguetá (SP), Brasil.
+
+    <br>
+    <br>
+
+    Romina Paula Di Sisto.
+    <br>
+    IALP-CONICET. JTP Mecánica Celeste I. Fac. de Cs Astronómicas y Geofísicas, La Plata, Bueno Aires, Argentina.
+
+    <br>
+  </div>
+
+  <div class="w3-container" id="resumos" style="margin-top:75px">
+  <h1 class="w3-xxxlarge w3-text-brown"><b>Submissão de Resumos</b></h1>
+  <hr style="width:50px;border:5px solid brown" class="w3-round">
+
+  A submissão de resumos pode ser feita pelo formulário abaixo, ou, por <a href= https://docs.google.com/forms/d/e/1FAIpQLScVRi8uX64x-UyPX2HKhqy6tkhqcXfjtqAh3Pp5_bTZi5Hg8g/viewform?embedded=true > aqui </a>. <br>
+
+  <br>
+
+  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScVRi8uX64x-UyPX2HKhqy6tkhqcXfjtqAh3Pp5_bTZi5Hg8g/viewform?embedded=true" width="640" height="1385" frameborder="0" marginheight="0" marginwidth="0"> </iframe>
+
+
+  </div>
+
+
 	
 	
   
@@ -127,6 +200,10 @@ body {font-size:16px;}
     <p>
 
     </p>
+
+
+
+
 
   </div> -->
 
@@ -185,42 +262,49 @@ body {font-size:16px;}
 
   </div> -->
 
-    <!-- informacoes -->
-  <div class="w3-container" id="outras" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-gray"><b>Informações Importantes</b></h1>
-    <hr style="width:50px;border:5px solid gray" class="w3-round">
-
-  </div>
 								 
   <!-- historico -->
   <div class="w3-container" id="historico" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-gray"><b>Colóquios Anteriores</b></h1>
-    <hr style="width:50px;border:5px solid gray" class="w3-round">
+    <h1 class="w3-xxxlarge w3-text-brown"><b>Colóquios Anteriores</b></h1>
+    <hr style="width:50px;border:5px solid brown" class="w3-round">
     <a href="https://pagecbdo.github.io/cbdo/cbdo2022/index.html">CBDO 2022</a>
       </font>
   </div>
 
   <!-- Contact -->
   <div class="w3-container" id="contato" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-gray"><b>Contato</b></h1>
-    <hr style="width:50px;border:5px solid gray" class="w3-round">
-   <!--  <p> <a href="mailto:xxicbdo2022@gmail.com">xxicbdo2022@gmail.com</a> </p> -->
+    <h1 class="w3-xxxlarge w3-text-brown"><b>Contato</b></h1>
+    <hr style="width:50px;border:5px solid brown" class="w3-round">
+    <p> <a href="mailto:cbdo2024@gmail.com">cbdo2024@gmail.com</a> </p>
   </div>
 
   <!-- Comissão -->
   <div class="w3-container" id="comissao" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-gray"><b>Comissão Organizadora</b></h1>
-    <hr style="width:50px;border:5px solid gray" class="w3-round">
+    <h1 class="w3-xxxlarge w3-text-brown"><b>Comissão Organizadora</b></h1>
+    <hr style="width:50px;border:5px solid brown" class="w3-round">
     <p> 
-    Antônio Fernando Bertachini de Almeida Padro, INPE <br>
-    Cristiano Fiorilo de Melo, UFMG <br>
-    Eduardo Shirlippe Goes Leandro, UFPE <br>
-    Gabriel Caritá, INPE <br>
-    Marcelo Domingos Marchesin, UFMG <br>
-    Nelson Callegari Junior, UNESP <br>
-    Rogerio Deienno, SwRI/USA <br>
-    Sylvio Ferraz-Mello, USP <br>
-    .....
+
+      Comitê Científico <br>
+      <br>
+  Antônio Fernando Bertachini de Almeida Padro, INPE – Brasil<br>
+  Eduardo Shirlippe Goes Leandro, UFPE - Brasil<br>
+  Jorge Alfredo Correa-Otto, CONICET – Argentina<br>
+  Marcelo Domingos Marchesin, UFMG – Brasil<br>
+  Nelson Callegari Júnior, UNESP – Brasil<br>
+  Priscilla Andressa de Souza Silva, UNESP – Brasil<br>
+  Rogério Deienno, SwRI – Estados Unidos <br>
+  Rosana Aparecida Nogueira de Araújo, UNESP – Brasil <br>
+  Sylvio Ferraz-Mello, USP – Brasil <br>
+<br>
+  Comitê Local <br>
+  <br>
+  Cristiano Fiorilo de Melo, UFMG – Brasil <br>
+  Denílson Paulo Souza dos Santos, UNESP – Brasil <br>
+  Gabriel Antonio Caritá, INPE – Brasil <br>
+  Lucas Ruiz dos Santos, UNIFEI – Brasil <br>
+  Luís Fernando de Osório Mello, UNIFEI – Brasil <br>
+  Pryscilla Maria Pires dos Santos, UERJ – Brasil <br>
+  Silvia Maria Giuliatti-Winter, UNESP – Brasil <br>
     </p>
   </div>
    <!-- The Team -->
@@ -229,7 +313,7 @@ body {font-size:16px;}
 </div>
 
 <!-- W3.CSS Container -->
-<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p></div>
+<div class="w3-light-brown w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p></div>
 
 <script>
 // Script to open and close sidebar
